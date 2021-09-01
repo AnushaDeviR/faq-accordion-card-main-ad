@@ -1,0 +1,177 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', serif;
+}
+
+body { 
+    background: linear-gradient(#4568DC, #B06AB3) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section { 
+    display: grid;
+}
+
+/*accordian card */ 
+.card { 
+    background-color: white;
+    width: 1000px; 
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.flex { 
+    display: flex; 
+   
+}
+
+/*image section*/ 
+
+.card .flex { 
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 75px;
+}
+
+.img-section{ 
+    width: 490px;
+    max-height: 650px;
+    margin-left:0 ;
+    position: relative;
+}
+.desktop-bg { 
+    /* max-width: 100%; */
+    position: relative;
+    right: 150px;
+    top: -300px;
+    left: -550px;
+}
+
+.desktop-img { 
+    position: absolute;
+    top: 70px;
+    left: -60px;
+}
+
+.desktop-box { 
+    position: absolute;
+    left: 360px;
+    top: 400px
+}
+
+/*faq section */ 
+
+
+.faq-section { 
+    width: 500px;
+    margin-left: -40px;
+    margin-top: 60px;
+    position: relative;
+    /* max-height: 650px; */
+
+}
+
+.faq-section h1 { 
+    width: 350px;
+    margin: 5px;
+}
+
+ul { 
+    list-style: none;
+}
+
+/*question-panel*/ 
+
+.qn-panel { 
+    width: 400px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    transition: 0.4s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.qn { 
+    float: left;
+    font-weight: 300;
+    color: #14292E;
+}
+
+
+.qn-panel p:hover { 
+    cursor: pointer;
+    color: orange;
+}
+
+
+.qn-panel .flex { 
+    justify-content: space-between;
+    align-content: center;
+    text-align: left;
+}
+
+/*answer-panel*/
+
+.ans-panel { 
+    width: 400px;
+    max-height: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    overflow: hidden;
+    float: left;
+    transition: max-height 0.2s ease-out;
+}
+
+/*active status */ 
+
+.activeStatus { 
+    font-weight: bolder;
+}
+
+.ansActiveStatus { 
+    display: block;
+}
+
+
+
+/*footer*/
+
+.attribution { 
+    margin-bottom: 0;
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* responsive design 
+@media(max-width: 768px) { 
+
+    .card { 
+        width: auto;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .card .flex { 
+        flex-direction: column;
+    }
+
+    .img-section { 
+        width: auto;
+        position: absolute;
+    }
+} */
+

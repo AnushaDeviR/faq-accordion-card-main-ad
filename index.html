@@ -3,82 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
 </head>
 <body>
+  <section class="card">
+    <div class="flex">
 
-<div class="container">
-  <div class="flex">
-    <div class="faq-card">
-
-      <div class="content">
-        <div class="flex">
-
-          <div class="faq-img-section">
-            <img class="faq-img-bg" src="./images/bg-pattern-desktop.svg" alt="">
-            <img class="faq-img" src="./images/illustration-woman-online-desktop.svg" alt="">
-          </div>
-
-          <div class="faq-section ">
-            
-            <div class="flex">
-              <h1>FAQ</h1>
-
-              <div class="questions">
-                <div class="flex">
-                  <p>How many team members can I invite? </p>
-                  <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
-                </div>
-              </div>
-
-              <div class="questions">
-                <div class="flex">
-                  <p>What is the maximum file upload size? </p>
-                  <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
-                </div>
-              </div>
-
-              <div class="questions">
-                <div class="flex">
-                  <p>How do I reset my password? </p>
-                  <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
-                </div> 
-              </div>   
-
-              <div class="questions">
-                <div class="flex">
-                  <p>Can I cancel my subscription? </p>
-                  <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
-                </div>
-              </div>
-
-              <div class="questions">
-                <div class="flex">
-                  <p>Do you provide additional support? </p>
-                  <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>    
+      <div class="img-section">
+        <img src="./images/bg-pattern-desktop.svg" alt="" class="desktop-bg">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="" class="desktop-img">
+        
       </div>
+      <img src="./images/illustration-box-desktop.svg" alt="" class="desktop-box">
+
+      <div class="faq-section">
+            <h1>FAQ</h1>
+
+          <ul id="1" >
+            <li class="qn-panel flex" onclick="dropDownFaq(event)">
+              <p class="qn" id="faqQn">How many team members can I invite?</p>
+              <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
+            </li> 
+            <li class="ans-panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. 
+              </p>  
+            </li>
+          </ul>
+
+          <ul id="2" >
+            <li class="qn-panel flex" onclick="dropDownFaq(event)">
+              <p class="qn" id="faqQn">What is the maximum file upload size?</p>
+              <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
+            </li> 
+            <li class="ans-panel">
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </p> 
+            </li>
+          </ul>
+
+
+          <ul id="3" >
+          <li class="qn-panel flex" onclick="dropDownFaq(event)">
+            <p class="qn" id="faqQn">
+              How do I reset my password?
+            </p>
+            <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
+          </li> 
+
+          <li class="ans-panel">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+          </li>
+        </ul>
+
+
+      <ul id="4" >
+        <li class="qn-panel flex" onclick="dropDownFaq(event)">
+          <p class="qn" id="faqQn">
+          Can I cancel my subscription?
+          </p>
+          <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">            
+        </li>
+
+        <li class="ans-panel">
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. 
+          </p>  
+        </li>
+    </ul>
+
+    
+    <ul id="5" >
+      <li class="qn-panel flex" onclick="dropDownFaq(event)">
+        <p class="qn" id="faqQn">
+          Do you provide additional support?
+        </p>
+        <img class="arrow-drop-down" src="./images/icon-arrow-down.svg" alt="">
+      </li> 
+
+      <li class="ans-panel">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua.
+        </p> 
+      </li>
+    </ul>
 
     </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
   </div>
 
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Anushadevi Rajkumar</a>.
-    </div>
-</div>  
+  <script src="./app.js"></script>
 </body>
 </html>
