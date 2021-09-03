@@ -8,7 +8,7 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+**This challenge is built with HTML, CSS and JavaScript.**
 
 Your users should be able to:
 
@@ -16,5 +16,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
+**Deployed under GitHub**
+Live Preview at: https://anushadevir.github.io/faq-accordion-card-main-ad/
 
 # faq-accordion-card-main-ad
