@@ -14,18 +14,19 @@ function dropDownFaq(event){
     console.log("Id matched");
 
     // active state styling 
-
+    
     let targetPanel = qnTarget.querySelectorAll("li")[0];   
     let qnPanel = targetPanel.querySelector("#faqQn");
-    // console.log(qnPanel);
     qnPanel.classList.toggle("activeStatus");
 
+    console.log(activeArrow)
 
     // dropdown answer 
     let answerPanel = qnTarget.querySelectorAll("li")[1]; 
-    answerPanel.classList.toggle("ansActiveStatus")
-    // console.log(answerPanel);
-     
+    answerPanel.classList.toggle("ansActiveStatus");
+
+    let activeArrow = event.path[1].childNodes[3];
+    activeArrow.classList.toggle("arrow-drop-down");     
 
     if (answerPanel.style.maxHeight){ 
         answerPanel.style.maxHeight = null;

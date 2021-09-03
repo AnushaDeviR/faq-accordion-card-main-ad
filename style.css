@@ -6,7 +6,7 @@
 }
 
 body { 
-    background: linear-gradient(#4568DC, #B06AB3) no-repeat center center fixed; 
+    background: linear-gradient(#B06AB3, #4568DC ) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@ section {
 /*accordian card */ 
 .card { 
     background-color: white;
-    width: 1000px; 
+    width: 1100px; 
     border-radius: 25px;
     margin: auto;
     margin-top: 10%;
@@ -36,50 +36,55 @@ section {
 
 .card .flex { 
     justify-content: space-between;
-    /* align-items: center; */
-    gap: 75px;
+    align-items: center;
+    left: -900px;
+    gap: 20px;
 }
 
 .img-section{ 
-    width: 490px;
+    max-width: 1100px;
     max-height: 650px;
-    margin-left:0 ;
     position: relative;
+    top: -310px;
+    left: -650px;
 }
+
 .desktop-bg { 
-    /* max-width: 100%; */
+    background-image: url("./images/bg-pattern-desktop.svg");
+    width: 1100px;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    right: 150px;
-    top: -300px;
-    left: -550px;
 }
 
 .desktop-img { 
-    position: absolute;
-    top: 70px;
-    left: -60px;
+    width: 515px;
+    height: 390px;
+    position: relative;
+    top: 395px;
+    left: 555px;
+    z-index: 1;
 }
 
 .desktop-box { 
     position: absolute;
-    left: 360px;
-    top: 400px
+    margin-left: -105px ;
+    z-index: 3;
 }
 
 /*faq section */ 
-
-
 .faq-section { 
+    right: 550px;
     width: 500px;
-    margin-left: -40px;
-    margin-top: 60px;
+    margin: 80px 35px 60px -10px;
     position: relative;
     /* max-height: 650px; */
-
 }
 
 .faq-section h1 { 
-    width: 350px;
+    width: 490px;
     margin: 5px;
 }
 
@@ -88,9 +93,8 @@ ul {
 }
 
 /*question-panel*/ 
-
 .qn-panel { 
-    width: 400px;
+    width: 490px;
     height: 60px;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -106,29 +110,27 @@ ul {
     color: #14292E;
 }
 
-
 .qn-panel p:hover { 
     cursor: pointer;
     color: orange;
 }
 
-
 .qn-panel .flex { 
-    justify-content: space-between;
-    align-content: center;
+    align-items: center;
     text-align: left;
 }
 
 /*answer-panel*/
 
 .ans-panel { 
-    width: 400px;
+    width: 490px;
     max-height: 0;
     padding-top: 10px;
     margin-bottom: 10px;
     display: none;
     overflow: hidden;
     float: left;
+    transition: 0.2s ease-in;
     transition: max-height 0.2s ease-out;
 }
 
@@ -142,7 +144,9 @@ ul {
     display: block;
 }
 
-
+.arrow-drop-down{ 
+    transform: rotate(180deg);
+}
 
 /*footer*/
 
@@ -156,22 +160,90 @@ ul {
     color: hsl(228, 45%, 44%); 
 }
 
-/* responsive design 
+
+/* responsive design - tablets */
+
+@media only screen and (min-width: 600px) {
+    .card { 
+        width: auto;
+        margin: 150px 60px 50px 60px;
+    }
+}
+
+/* responsive design - mobiles */
 @media(max-width: 768px) { 
 
     .card { 
         width: auto;
-        margin-top: auto;
-        margin-left: auto;
+        margin: 150px 15px 50px 15px;
     }
 
     .card .flex { 
-        flex-direction: column;
+        flex-direction: row;
+        margin: 10px;        
     }
 
+    /*img section*/
+
     .img-section { 
-        width: auto;
+        margin: auto;
         position: absolute;
+        top: 10px;
+        left: 50px;
     }
-} */
+    
+
+    .desktop-bg { 
+        width: 275px;
+        height: 270px;
+        position: absolute;
+        
+    }
+
+    .desktop-img { 
+        width: 275px;
+        height: 210px;
+        position: absolute;
+        margin-top: -382px;
+        left: 0;
+    }
+
+    .desktop-box { 
+        position: absolute;
+        margin-left: 0px;
+        z-index: 3;
+        width: 115px;
+        top: 90px;
+    }
+
+    /*faq-section*/
+
+    .faq-section { 
+        right: 0;
+        width: auto;
+        margin: 60px 5px 10px 5px;
+    }
+
+    .faq-section h1 { 
+        width: auto;
+        margin: 100px 10px 10px 10px;
+        text-align: center;
+    }
+    
+    .qn-panel { 
+        width: 280px;
+        height: auto;
+        padding-left: 0;
+    }
+    .qn{
+        float: right;
+
+    }
+    
+    .ans-panel { 
+        width: 260px;
+        margin-left: 10px;
+    }
+  
+}
 
