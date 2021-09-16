@@ -4,19 +4,15 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
 **This challenge is built with HTML, CSS and JavaScript.**
 
-Your users should be able to:
+User Story:
 
 - View the optimal layout for the component depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
 **Deployed under GitHub**
-Live Preview at: https://anushadevir.github.io/faq-accordion-card-main-ad/
+Live Preview of the Code Challenge at: https://anushadevir.github.io/faq-accordion-card-main-ad/
 
 # faq-accordion-card-main-ad
